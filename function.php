@@ -13,7 +13,7 @@ $conn->query($sql_query);
 
 
 if ($conn->query($sql_query) === TRUE) {
-    header("Location: index.php");
+    header("Location: thankyou.php");
 exit;
 } else {
     echo "Error: " . $sql_query . "<br>" . $conn->error;

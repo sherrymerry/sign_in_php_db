@@ -39,7 +39,7 @@
                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
 
                 
-                <form class="mx-1 mx-md-4" id="my_form" action="function.php" method="post">
+                <form class="mx-1 mx-md-4" id="my_form" action="function.php" method="POST">
 
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
@@ -87,7 +87,7 @@
                   </div>
 
                   <div class="form-check d-flex justify-content-center mb-5">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                    <input class="form-check-input me-2" type="checkbox" checked="checked" id="form2Example3c" />
                     <label class="form-check-label" for="form2Example3">
                       I agree all statements in <a href="#!">Terms of service</a>
                     </label>
@@ -180,7 +180,7 @@ else if(pass.trim() === "" ){
 }
 
 else if(rep_pass.trim() === "" ){
-    document.getElementById('reppassError').innerHTML = "Please enter repeat password";
+    document.getElementById('reppassError').innerHTML = "Please repeat your password";
 }
 
 else if(pass !== rep_pass){
@@ -204,12 +204,14 @@ else if(pass === rep_pass){
   timer: 1500
 });
 
+document.getElementById("my_form").submit();
+
 }
 
 else{
 
     document.getElementById('reppassError').innerHTML = "";
-    document.getElementById("my_form").submit();
+   
 
 }
 

@@ -19,7 +19,7 @@
                 <div class="text-center">
                     <h1>Thank You !</h1>
                     <p>We've send the link to your inbox. Lorem ipsum dolor sit, </p>
-                    <a href="index.php"><button class="btn btn-primary">Back Home</button></a>
+                    <a href="user_login.php"><button class="btn btn-primary">Back Home</button></a>
                 </div>
             </div>
 
